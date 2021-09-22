@@ -56,10 +56,10 @@ public class RendererMain extends JPanel {
         	);
 
         for (int x = 0; x < width; x++) {
-        	for(int y = 0; y < height; y++){
-        		Ray ray = new Ray(x, y);
-        		panel.setPixel(x, y, new RayTracer(ray, scene, 3).getColor().realColor());
-        	}
+            for(int y = 0; y < height; y++){
+                Ray ray = new Ray(x, y);
+                panel.setPixel(x, y, new RayTracer(ray, scene, 3).getColor().realColor());
+            }
         }
     }
 }
